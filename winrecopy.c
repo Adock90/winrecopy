@@ -21,13 +21,14 @@ void Help()
 
 int main(int argc, char* argv[])
 {
-	//if (argc < 2 || argc > 2)
-	//{
-		//Help();
-		//return 1;
-	//}
+	if (argc < 2 || argc > 2)
+	{
+		Help();
+		return 1;
+	}
 
 	CopyDirRecursive(argv[1], argv[2]);
 
 	return 0;
+
 }
